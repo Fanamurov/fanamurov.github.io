@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+        
+    <url>
+     <loc>/Index/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Компоненты-(Components)/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Переназначение-настроек-компонентов-(изменение-Component-и-Model)/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Переназначение-контроллеров-компонентов/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Добавление-панелей-компонентов-на-Dashboard/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Роуты-(routes)/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Генерирование-sitemap.xml-карты-сайта/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/FormBuilder/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/FBElement---класс-конструктор-для-FormBuilder/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Метод-addRows().-Создание-полей-компонента-при-помощи-FormBuilder/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Установка-LarrockPages/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Установка-LarrockMenu/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Вывод-меню-на-фронт-(Middleware-AddMenuFront)/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Index/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Установка-LarrockBlocks/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Вывод-блоков-в-шаблоне-(AddBlocksTemplate-Middleware)/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Установка-LarrockContacts/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Настройка-компонентов-для-поиска-внутри-админки/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Установка-LarrockFeed/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Плагин-создания-анонсов-(addAnonsToModule)/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Установка-LarrockCategory/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Установка-LarrockCatalog/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Поиск-по-каталогу-с-автоподсказчиком-(CatalogSearch-Middleware)/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Вывод-случайных-товаров-(RandomCatalogItems-Middleware)/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Установка-LarrockCart/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Установка-LarrockDiscount/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Установка-LarrockWizard/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Прайс-для-импорта-каталога-на-сайт/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Процесс-импорта-прайса,-редактирование-прайса/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Установка-LarrockReviews/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Установка-LarrockSmartbanners/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Вывод-меню-на-фронт-(Middleware-AddMenuFront)/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/AdminMenu-Core-Middleware/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Использование-GetSeo-Middleware/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/SaveAdminPluginsData-Core-Middleware/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Вывод-блоков-в-шаблоне-(AddBlocksTemplate-Middleware)/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Поиск-по-каталогу-с-автоподсказчиком-(CatalogSearch-Middleware)/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Вывод-случайных-товаров-(RandomCatalogItems-Middleware)/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>
