@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Вывод случайных товаров (RandomCatalogItems Middleware) - Larrock Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u0412\u044b\u0432\u043e\u0434 \u0441\u043b\u0443\u0447\u0430\u0439\u043d\u044b\u0445 \u0442\u043e\u0432\u0430\u0440\u043e\u0432 (RandomCatalogItems Middleware)";
+    var mkdocs_page_input_path = "\u0412\u044b\u0432\u043e\u0434-\u0441\u043b\u0443\u0447\u0430\u0438\u0306\u043d\u044b\u0445-\u0442\u043e\u0432\u0430\u0440\u043e\u0432-(RandomCatalogItems-Middleware).md";
+    var mkdocs_page_url = "/\u0412\u044b\u0432\u043e\u0434-\u0441\u043b\u0443\u0447\u0430\u0438\u0306\u043d\u044b\u0445-\u0442\u043e\u0432\u0430\u0440\u043e\u0432-(RandomCatalogItems-Middleware)/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../Index/" class="icon icon-home"> Larrock Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockCore</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Index/">Общая информация</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Компоненты-(Components)/">Components</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Переназначение-настроек-компонентов-(изменение-Component-и-Model)/">Переназначение настроек и моделей компонентов</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Переназначение-контроллеров-компонентов/">Переназначение контроллеров</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Добавление-панелей-компонентов-на-Dashboard/">Добавление панелей компонентов на Dashboard</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">First steps</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Роуты-(routes)/">Роуты (routes)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Генерирование-sitemap.xml-карты-сайта/">Генерирование sitemap.xml карты сайта</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">FormBuilder</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../FormBuilder/">Методы/типы полей</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../FBElement---класс-конструктор-для-FormBuilder/">FBElement - класс конструктор полей</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Метод-addRows().-Создание-полей-компонента-при-помощи-FormBuilder/">Метод addRows() - создание полей компонента</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockPages</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockPages/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockMenu</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockMenu/">Установка</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Вывод-меню-на-фронт-(Middleware-AddMenuFront)/">Вывод меню на фронт (AddMenuFront Middleware)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockUsers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Index/">TEST</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockBlocks</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockBlocks/">Установка</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Вывод-блоков-в-шаблоне-(AddBlocksTemplate-Middleware)/">Вывод блоков в шаблоне (AddBlocksTemplate Middleware)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockContact</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockContacts/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockAdminSeo</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Настройка-компонентов-для-поиска-внутри-админки/">Настройка компонентов для поиска внутри админки</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockFeed</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockFeed/">Установка</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Плагин-создания-анонсов-(addAnonsToModule)/">Плагин создания анонсов (addAnonsToModule)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockCategory</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockCategory/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockCatalog</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockCatalog/">Установка</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Поиск-по-каталогу-с-автоподсказчиком-(CatalogSearch-Middleware)/">Поиск по каталогу с автоподсказчиком (CatalogSearch Middleware)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="./">Вывод случайных товаров (RandomCatalogItems Middleware)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockCart</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockCart/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockDiscount</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockDiscount/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockWizard</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockWizard/">Установка</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Прайс-для-импорта-каталога-на-сайт/">Прайс для импорта каталога на сайт</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Процесс-импорта-прайса,-редактирование-прайса/">Процесс импорта прайса, редактирование прайса</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockReviews</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockReviews/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockSmartbanners</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockSmartbanners/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Middlewares</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Вывод-меню-на-фронт-(Middleware-AddMenuFront)/">Вывод меню на фронт (AddMenuFront Middleware)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../AdminMenu-Core-Middleware/">Вывод меню в админке (AdminMenu Middleware)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Использование-GetSeo-Middleware/">Вывод данных SEO-плагина (GetSeo Middleware)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../SaveAdminPluginsData-Core-Middleware/">Сохранение данных плагинов (SaveAdminPluginsData Middleware)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Вывод-блоков-в-шаблоне-(AddBlocksTemplate-Middleware)/">Вывод блоков в шаблоне (AddBlocksTemplate Middleware)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Поиск-по-каталогу-с-автоподсказчиком-(CatalogSearch-Middleware)/">Поиск по каталогу с автоподсказчиком (CatalogSearch Middleware)</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Вывод случайных товаров (RandomCatalogItems Middleware)</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#_1">Подключение модуля случайных товаров</a></li>
+    
+
+    <li class="toctree-l3"><a href="#_2">Конфигурация модуля</a></li>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../Index/">Larrock Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../Index/">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Middlewares &raquo;</li>
+        
+      
+    
+    <li>Вывод случайных товаров (RandomCatalogItems Middleware)</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Составная часть компонента LarrockCatalog</p>
+<p>Позволяет реализовать вывод случайных товаров каталога в виде модуля.</p>
+<h2 id="_1">Подключение модуля случайных товаров</h2>
+<ol>
+<li>
+<p>Подключите middleware RandomCatalogItems для нужных роутов, либо добавьте в app/Http/Kernel.php в секцию 'web': </p>
+<p><code>php
+Larrock\ComponentCatalog\Middleware\RandomCatalogItems::class</code></p>
+</li>
+<li>
+<p>Вывод шаблона модуля:
+    <code>php
+    @if(isset($RandomCatalogItems))
+        @include('larrock::front.modules.list.random_catalog_items', $RandomCatalogItems)
+    @endif</code></p>
+</li>
+</ol>
+<h2 id="_2">Конфигурация модуля</h2>
+<p>Изменение количества выводимых товаров:
+Создайте файл конфига /config/larrock.php</p>
+<pre><code class="php">&lt;?php
+
+return [
+    'catalog' =&gt; [
+        'RandomCatalogItems' =&gt; [
+            'items' =&gt; 3,
+            'categories' =&gt; [1,2,3, ...],
+            'level' =&gt; 3
+        ]
+    ]
+];
+</code></pre>
+
+<p><strong>items</strong> - количество выводимых товаров. По-умолчанию: 3.
+<strong>categories</strong> - разделы для выбора товаров (опционально). По-умолчанию: все опубликованные.
+<strong>level</strong> - уровень раздела каталога для выборки товаров (опционально). По-умолчанию: 3.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../Поиск-по-каталогу-с-автоподсказчиком-(CatalogSearch-Middleware)/" class="btn btn-neutral" title="Поиск по каталогу с автоподсказчиком (CatalogSearch Middleware)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Поиск-по-каталогу-с-автоподсказчиком-(CatalogSearch-Middleware)/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>

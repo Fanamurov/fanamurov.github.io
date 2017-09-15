@@ -1,0 +1,1 @@
+GetSeo Middleware предоставляет доступ в blade-шаблоне к переменной с SEO-данными {{ $seo_midd }}

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>FBElement - класс конструктор полей - Larrock Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "FBElement - \u043a\u043b\u0430\u0441\u0441 \u043a\u043e\u043d\u0441\u0442\u0440\u0443\u043a\u0442\u043e\u0440 \u043f\u043e\u043b\u0435\u0439";
+    var mkdocs_page_input_path = "FBElement---\u043a\u043b\u0430\u0441\u0441-\u043a\u043e\u043d\u0441\u0442\u0440\u0443\u043a\u0442\u043e\u0440-\u0434\u043b\u044f-FormBuilder.md";
+    var mkdocs_page_url = "/FBElement---\u043a\u043b\u0430\u0441\u0441-\u043a\u043e\u043d\u0441\u0442\u0440\u0443\u043a\u0442\u043e\u0440-\u0434\u043b\u044f-FormBuilder/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../Index/" class="icon icon-home"> Larrock Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockCore</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Index/">Общая информация</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Компоненты-(Components)/">Components</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Переназначение-настроек-компонентов-(изменение-Component-и-Model)/">Переназначение настроек и моделей компонентов</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Переназначение-контроллеров-компонентов/">Переназначение контроллеров</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Добавление-панелей-компонентов-на-Dashboard/">Добавление панелей компонентов на Dashboard</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">First steps</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Роуты-(routes)/">Роуты (routes)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Генерирование-sitemap.xml-карты-сайта/">Генерирование sitemap.xml карты сайта</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">FormBuilder</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../FormBuilder/">Методы/типы полей</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">FBElement - класс конструктор полей</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#_1">Базовые методы:</a></li>
+    
+
+    <li class="toctree-l3"><a href="#_2">Получение сгенерированного конфига поля</a></li>
+    
+
+    <li class="toctree-l3"><a href="#_3">Методы конкретных полей</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Метод-addRows().-Создание-полей-компонента-при-помощи-FormBuilder/">Метод addRows() - создание полей компонента</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockPages</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockPages/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockMenu</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockMenu/">Установка</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Вывод-меню-на-фронт-(Middleware-AddMenuFront)/">Вывод меню на фронт (AddMenuFront Middleware)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockUsers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Index/">TEST</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockBlocks</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockBlocks/">Установка</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Вывод-блоков-в-шаблоне-(AddBlocksTemplate-Middleware)/">Вывод блоков в шаблоне (AddBlocksTemplate Middleware)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockContact</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockContacts/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockAdminSeo</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Настройка-компонентов-для-поиска-внутри-админки/">Настройка компонентов для поиска внутри админки</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockFeed</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockFeed/">Установка</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Плагин-создания-анонсов-(addAnonsToModule)/">Плагин создания анонсов (addAnonsToModule)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockCategory</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockCategory/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockCatalog</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockCatalog/">Установка</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Поиск-по-каталогу-с-автоподсказчиком-(CatalogSearch-Middleware)/">Поиск по каталогу с автоподсказчиком (CatalogSearch Middleware)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Вывод-случайных-товаров-(RandomCatalogItems-Middleware)/">Вывод случайных товаров (RandomCatalogItems Middleware)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockCart</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockCart/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockDiscount</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockDiscount/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockWizard</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockWizard/">Установка</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Прайс-для-импорта-каталога-на-сайт/">Прайс для импорта каталога на сайт</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Процесс-импорта-прайса,-редактирование-прайса/">Процесс импорта прайса, редактирование прайса</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockReviews</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockReviews/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockSmartbanners</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockSmartbanners/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Middlewares</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Вывод-меню-на-фронт-(Middleware-AddMenuFront)/">Вывод меню на фронт (AddMenuFront Middleware)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../AdminMenu-Core-Middleware/">Вывод меню в админке (AdminMenu Middleware)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Использование-GetSeo-Middleware/">Вывод данных SEO-плагина (GetSeo Middleware)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../SaveAdminPluginsData-Core-Middleware/">Сохранение данных плагинов (SaveAdminPluginsData Middleware)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Вывод-блоков-в-шаблоне-(AddBlocksTemplate-Middleware)/">Вывод блоков в шаблоне (AddBlocksTemplate Middleware)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Поиск-по-каталогу-с-автоподсказчиком-(CatalogSearch-Middleware)/">Поиск по каталогу с автоподсказчиком (CatalogSearch Middleware)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Вывод-случайных-товаров-(RandomCatalogItems-Middleware)/">Вывод случайных товаров (RandomCatalogItems Middleware)</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../Index/">Larrock Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../Index/">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>FormBuilder &raquo;</li>
+        
+      
+    
+    <li>FBElement - класс конструктор полей</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Класс FBElement используется для определения настроек полей компонента внутри <a href="https://github.com/Fanamurov/larrock-core/wiki/FormBuilder">FormBuilder</a></p>
+<h3 id="_1">Базовые методы:</h3>
+<p>Конструктор принимает на вход два параметра $name (название поля/название в БД) и $title (человеческое название)</p>
+<ul>
+<li><strong>setFillable() - поле добавляется в массив fillable модели компонента</strong></li>
+<li>setDefaultValue($default) - Использовать в качестве значения по-умолчанию. Можно передать в качестве параметра имя поля, тогда оно будет браться из БД</li>
+<li>setInTableAdmin() - Выводить поле в таблице(списке) контента в админке</li>
+<li>setInTableAdminAjaxEditable() - Выводить поле в таблице(списке) контента в админке и дать возможность редактировать через ajax</li>
+<li>setValid($valid) - добавить методы валидации</li>
+<li>isRequired() - сделать поле обязательным</li>
+<li>setCssClassGroup($class) - назначить css-класс для блока вывода поля в админке</li>
+<li>setCssClass($class) - назначить css-класс для поля в админке (например .not-editor для textarea для отключения редактора)</li>
+<li>setTab($tab_name, $tab_title) - в каком табе редактирования выводить поле</li>
+<li>setHelp($help) - текстовое пояснение для поля</li>
+<li>setConnect($model, $relation_name = NULL) - установить связь поля с моделью и методом получения данных по модели</li>
+<li>setWhereConnect($key, $value) - установить фильтрацию для получаемых по setConnect данным</li>
+<li>setAttached() - поле должно использовать метод attached</li>
+<li>setFrontPlace($place) - в каком блоке на фронте выводить поле</li>
+<li>setFiltered() - поле может фильтровать контент на фронте (используется в компоненте larrock-catalog)</li>
+<li>setSorted() - поле может сортировать контент на фронте (используется в компоненте larrock-catalog)</li>
+<li>setTemplate($template) - указать шаблон для вывода поля</li>
+<li>setUserSelect() - поле может быть заполнено пользователем (например для создания select-поля)</li>
+</ul>
+<h3 id="_2">Получение сгенерированного конфига поля</h3>
+<ul>
+<li>getElement()</li>
+</ul>
+<h3 id="_3">Методы конкретных полей</h3>
+<p>Классы реализующие добавление полей наследуются и могут расширять базовый класс</p>
+<p><strong>FormTextarea, FormInput</strong>
+* setTypo() - включить возможность типографить текст внутри поля</p>
+<p><strong>FormTextarea</strong>
+* setNotEditor() - отключить редактор для редактирования поля</p>
+<p><strong>FormTags, FormTagsCreate, FormTagsRole, FormCatalogItems, FormCategory</strong>
+* setMaxItems($max = null) - установить максимально доступное для выбора/сохранения количество значений</p>
+<p><strong>FormCatalogItems</strong>
+* setOptions($options) - передача массива со значениями полей в виде ассоциативного массива в виде ключ:значение (имя значения поля для сохранения:выводимое значение для пользователя)</p>
+<p><strong>FromCheckbox</strong>
+* setChecked() - поле по-умолчанию нажато</p>
+<p><strong>FormSelect, FormSelectKey</strong>
+<em> setOptions($options) - передача массива со значениями полей в виде ассоциативного массива в виде ключ:значение (имя значения поля для сохранения:выводимое значение для пользователя)
+</em> setOptionsTitle($row) - какое значение из массива options показывать пользователям (например, сохраняем по id, а показываем title из материала по setConnect())</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Метод-addRows().-Создание-полей-компонента-при-помощи-FormBuilder/" class="btn btn-neutral float-right" title="Метод addRows() - создание полей компонента">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../FormBuilder/" class="btn btn-neutral" title="Методы/типы полей"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../FormBuilder/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Метод-addRows().-Создание-полей-компонента-при-помощи-FormBuilder/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>

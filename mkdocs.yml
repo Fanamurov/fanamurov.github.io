@@ -1,0 +1,59 @@
+site_name: Larrock Docs
+theme: readthedocs
+pages:
+  - LarrockCore: 
+    - 'Общая информация': 'Index.md'
+    - 'Components': 'Компоненты-(Components).md'
+    - 'Переназначение настроек и моделей компонентов': 'Переназначение-настроек-компонентов-(изменение-Component-и-Model).md'
+    - 'Переназначение контроллеров': 'Переназначение-контроллеров-компонентов.md'
+    - 'Добавление панелей компонентов на Dashboard': 'Добавление-панелей-компонентов-на-Dashboard.md'
+  - First steps:
+    - 'Роуты (routes)': 'Роуты-(routes).md'
+    - 'Генерирование sitemap.xml карты сайта': 'Генерирование-sitemap.xml-карты-сайта.md'
+  - FormBuilder:
+    - 'Методы/типы полей': 'FormBuilder.md'
+    - 'FBElement - класс конструктор полей': 'FBElement---класс-конструктор-для-FormBuilder.md'
+    - 'Метод addRows() - создание полей компонента': 'Метод-addRows().-Создание-полей-компонента-при-помощи-FormBuilder.md'
+  - LarrockPages:
+    - 'Установка': 'Установка-LarrockPages.md'
+  - LarrockMenu:
+    - 'Установка': 'Установка-LarrockMenu.md'
+    - 'Вывод меню на фронт (AddMenuFront Middleware)': 'Вывод-меню-на-фронт-(Middleware-AddMenuFront).md'
+  - LarrockUsers:
+    - 'TEST': 'Index.md'
+  - LarrockBlocks:
+    - 'Установка': 'Установка-LarrockBlocks.md'
+    - 'Вывод блоков в шаблоне (AddBlocksTemplate Middleware)': 'Вывод-блоков-в-шаблоне-(AddBlocksTemplate-Middleware).md'
+  - LarrockContact:
+    - 'Установка': 'Установка-LarrockContacts.md'
+  - LarrockAdminSeo:
+    - 'Настройка компонентов для поиска внутри админки': 'Настройка-компонентов-для-поиска-внутри-админки.md'
+  - LarrockFeed:
+    - 'Установка': 'Установка-LarrockFeed.md'
+    - 'Плагин создания анонсов (addAnonsToModule)': 'Плагин-создания-анонсов-(addAnonsToModule).md'
+  - LarrockCategory:
+    - 'Установка': 'Установка-LarrockCategory.md'
+  - LarrockCatalog:
+    - 'Установка': 'Установка-LarrockCatalog.md'
+    - 'Поиск по каталогу с автоподсказчиком (CatalogSearch Middleware)': 'Поиск-по-каталогу-с-автоподсказчиком-(CatalogSearch-Middleware).md'
+    - 'Вывод случайных товаров (RandomCatalogItems Middleware)': 'Вывод-случайных-товаров-(RandomCatalogItems-Middleware).md'
+  - LarrockCart:
+    - 'Установка': 'Установка-LarrockCart.md'
+  - LarrockDiscount:
+    - 'Установка': 'Установка-LarrockDiscount.md'
+  - LarrockWizard:
+    - 'Установка': 'Установка-LarrockWizard.md'
+    - 'Прайс для импорта каталога на сайт': 'Прайс-для-импорта-каталога-на-сайт.md'
+    - 'Процесс импорта прайса, редактирование прайса': 'Процесс-импорта-прайса,-редактирование-прайса.md'
+  - LarrockReviews:
+    - 'Установка': 'Установка-LarrockReviews.md'
+  - LarrockSmartbanners:
+    - 'Установка': 'Установка-LarrockSmartbanners.md'
+  - Middlewares:
+    - 'Вывод меню на фронт (AddMenuFront Middleware)': 'Вывод-меню-на-фронт-(Middleware-AddMenuFront).md'
+    - 'Вывод меню в админке (AdminMenu Middleware)': 'AdminMenu-Core-Middleware.md'
+    - 'Вывод данных SEO-плагина (GetSeo Middleware)': 'Использование-GetSeo-Middleware.md'
+    - 'Сохранение данных плагинов (SaveAdminPluginsData Middleware)': 'SaveAdminPluginsData-Core-Middleware.md'
+    - 'Вывод блоков в шаблоне (AddBlocksTemplate Middleware)': 'Вывод-блоков-в-шаблоне-(AddBlocksTemplate-Middleware).md'
+    - 'Поиск по каталогу с автоподсказчиком (CatalogSearch Middleware)': 'Поиск-по-каталогу-с-автоподсказчиком-(CatalogSearch-Middleware).md'
+    - 'Вывод случайных товаров (RandomCatalogItems Middleware)': 'Вывод-случайных-товаров-(RandomCatalogItems-Middleware).md'

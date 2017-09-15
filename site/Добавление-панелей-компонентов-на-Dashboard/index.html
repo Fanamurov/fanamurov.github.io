@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Добавление панелей компонентов на Dashboard - Larrock Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u043f\u0430\u043d\u0435\u043b\u0435\u0439 \u043a\u043e\u043c\u043f\u043e\u043d\u0435\u043d\u0442\u043e\u0432 \u043d\u0430 Dashboard";
+    var mkdocs_page_input_path = "\u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u0438\u0435-\u043f\u0430\u043d\u0435\u043b\u0435\u0438\u0306-\u043a\u043e\u043c\u043f\u043e\u043d\u0435\u043d\u0442\u043e\u0432-\u043d\u0430-Dashboard.md";
+    var mkdocs_page_url = "/\u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u0438\u0435-\u043f\u0430\u043d\u0435\u043b\u0435\u0438\u0306-\u043a\u043e\u043c\u043f\u043e\u043d\u0435\u043d\u0442\u043e\u0432-\u043d\u0430-Dashboard/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../Index/" class="icon icon-home"> Larrock Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockCore</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Index/">Общая информация</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Компоненты-(Components)/">Components</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Переназначение-настроек-компонентов-(изменение-Component-и-Model)/">Переназначение настроек и моделей компонентов</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Переназначение-контроллеров-компонентов/">Переназначение контроллеров</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Добавление панелей компонентов на Dashboard</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#_1">Вывод панели</a></li>
+    
+
+    <li class="toctree-l3"><a href="#-">Изменение вывода панелей по-умолчанию</a></li>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">First steps</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Роуты-(routes)/">Роуты (routes)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Генерирование-sitemap.xml-карты-сайта/">Генерирование sitemap.xml карты сайта</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">FormBuilder</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../FormBuilder/">Методы/типы полей</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../FBElement---класс-конструктор-для-FormBuilder/">FBElement - класс конструктор полей</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Метод-addRows().-Создание-полей-компонента-при-помощи-FormBuilder/">Метод addRows() - создание полей компонента</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockPages</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockPages/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockMenu</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockMenu/">Установка</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Вывод-меню-на-фронт-(Middleware-AddMenuFront)/">Вывод меню на фронт (AddMenuFront Middleware)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockUsers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Index/">TEST</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockBlocks</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockBlocks/">Установка</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Вывод-блоков-в-шаблоне-(AddBlocksTemplate-Middleware)/">Вывод блоков в шаблоне (AddBlocksTemplate Middleware)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockContact</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockContacts/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockAdminSeo</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Настройка-компонентов-для-поиска-внутри-админки/">Настройка компонентов для поиска внутри админки</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockFeed</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockFeed/">Установка</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Плагин-создания-анонсов-(addAnonsToModule)/">Плагин создания анонсов (addAnonsToModule)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockCategory</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockCategory/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockCatalog</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockCatalog/">Установка</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Поиск-по-каталогу-с-автоподсказчиком-(CatalogSearch-Middleware)/">Поиск по каталогу с автоподсказчиком (CatalogSearch Middleware)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Вывод-случайных-товаров-(RandomCatalogItems-Middleware)/">Вывод случайных товаров (RandomCatalogItems Middleware)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockCart</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockCart/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockDiscount</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockDiscount/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockWizard</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockWizard/">Установка</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Прайс-для-импорта-каталога-на-сайт/">Прайс для импорта каталога на сайт</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Процесс-импорта-прайса,-редактирование-прайса/">Процесс импорта прайса, редактирование прайса</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockReviews</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockReviews/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">LarrockSmartbanners</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Установка-LarrockSmartbanners/">Установка</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Middlewares</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Вывод-меню-на-фронт-(Middleware-AddMenuFront)/">Вывод меню на фронт (AddMenuFront Middleware)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../AdminMenu-Core-Middleware/">Вывод меню в админке (AdminMenu Middleware)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Использование-GetSeo-Middleware/">Вывод данных SEO-плагина (GetSeo Middleware)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../SaveAdminPluginsData-Core-Middleware/">Сохранение данных плагинов (SaveAdminPluginsData Middleware)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Вывод-блоков-в-шаблоне-(AddBlocksTemplate-Middleware)/">Вывод блоков в шаблоне (AddBlocksTemplate Middleware)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Поиск-по-каталогу-с-автоподсказчиком-(CatalogSearch-Middleware)/">Поиск по каталогу с автоподсказчиком (CatalogSearch Middleware)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Вывод-случайных-товаров-(RandomCatalogItems-Middleware)/">Вывод случайных товаров (RandomCatalogItems Middleware)</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../Index/">Larrock Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../Index/">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>LarrockCore &raquo;</li>
+        
+      
+    
+    <li>Добавление панелей компонентов на Dashboard</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Любой компонент можно вывести на главную страницу админки (dashboard). Метод можно использовать для вывода быстрых ссылок на создание новых материалов, вывода статистики или любых других данных.</p>
+<h2 id="_1">Вывод панели</h2>
+<ol>
+<li>
+<p>Создайте и опишите в компоненте (например в BlocksComponent.php) функцию toDashboard
+    <code>php
+    public function toDashboard()
+    {
+        return view('larrock::admin.dashboard.blocks', ['component' =&gt; LarrockBlocks::getConfig()]);
+    }</code></p>
+</li>
+<li>
+<p>Создайте файл шаблона вывода панели (например: admin/dashboard/blocks.blade.php)
+    <code>&lt;div id="dashboard-blocks" class="dashboard-item uk-width-small-1-2 uk-width-medium-1-4"&gt;
+        &lt;div class="uk-panel uk-alert"&gt;
+            &lt;p class="uk-h3"&gt;&lt;a href="/admin/{{ $component-&gt;name }}"&gt;{{ $component-&gt;title }}&lt;/a&gt;&lt;/p&gt;
+            &lt;a href="/admin/blocks/create" class="uk-button uk-button-primary"&gt;Создать блок&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code></p>
+</li>
+<li>
+<p>В файле конфига config/larrock-to-dashboard.php пропишите ссылку на подключение компонента:
+    ```php
+    &lt;?php</p>
+<p>$components = [];</p>
+<p>if(file_exists(base_path(). '/vendor/fanamurov/larrock-blocks')){
+    $components[] = new \Larrock\ComponentBlocks\BlocksComponent();
+}</p>
+<p>return [
+    'components' =&gt; $components
+];
+```</p>
+</li>
+</ol>
+<h2 id="-">Изменение вывода панелей по-умолчанию</h2>
+<p>Вы всегда можете изменить шаблон вывода через редактирование самого шаблона /views/vendor/larrock/admin/dashboard/НазваниеКомпонента.blade.php. Либо полностью изменить поведение панели <a href="https://github.com/Fanamurov/larrock-core/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D0%BD%D0%B0%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BA-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%BE%D0%B2-%28%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-Component-%D0%B8-Model%29">переназначив сам компонент</a>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Роуты-(routes)/" class="btn btn-neutral float-right" title="Роуты (routes)">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Переназначение-контроллеров-компонентов/" class="btn btn-neutral" title="Переназначение контроллеров"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Переназначение-контроллеров-компонентов/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Роуты-(routes)/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>
